@@ -66,3 +66,161 @@ p {
     text-align: center;
     font-size: 18px;
 }
+.dept-box {
+    max-width: 680px;
+    margin: 25px auto;
+    background-color: white;
+    padding: 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid #c9992f;
+}
+
+.dept-box h2 {
+    color: #0b3d63;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.dept-box p {
+    text-align: left;
+    margin: 0;
+    color: #4a4a4a;
+}
+
+.dept-box ul {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+/* ---- Tamil Department New Layout ---- */
+
+.dept-banner {
+    background-color: #0b3d63;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.dept-banner h1 {
+    color: white;
+    margin: 0;
+    font-size: 34px;
+}
+
+.dept-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.dept-main {
+    flex: 2;
+}
+
+.dept-sidebar {
+    flex: 1;
+}
+
+/* Buttons row */
+.dept-btn-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.dept-btn {
+    background-color: #5ba36a;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 140px;
+}
+
+.dept-btn:hover {
+    background-color: #468a54;
+}
+
+/* Section titles */
+.section-title {
+    color: #0b3d63;
+    border-bottom: 2px solid #c9992f;
+    padding-bottom: 8px;
+    margin-top: 35px;
+}
+
+.dept-main h3 {
+    color: #0b3d63;
+    margin-top: 20px;
+}
+
+.dept-main p, .dept-main li {
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.year-list {
+    list-style: none;
+    padding: 0;
+}
+
+.year-list li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Sidebar boxes */
+.notice-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.notice-box h2 {
+    color: #0b3d63;
+    font-size: 18px;
+}
+
+.contact-box {
+    background-color: #0b3d63;
+    color: white;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.contact-box h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-box h3 {
+    color: #5ba36a;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.contact-box h4 {
+    color: #5ba36a;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contact-box p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ section|capitalize }} - {{ dept.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/departments">Departments</a> |
+        <a href="/notices">Notices</a> |
+        <a href="/timetable">Timetable</a> |
+        <a href="/contact">Contact</a>
+    </nav>
+
+    {% if section == 'faculty' %}
+        <h1>Faculty Members - {{ dept.name }}</h1>
+        <div class="dept-box">
+            <ul>
+                {% for member in dept.faculty %}
+                <li>{{ member }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    {% elif section == 'syllabus' %}
+        <h1>Syllabus - {{ dept.name }}</h1>
+        <div class="dept-box">
+            <p>{{ dept.syllabus }}</p>
+        </div>
+
+    {% elif section == 'peos' %}
+        <h1>PEOs, POs & PSOs - {{ dept.name }}</h1>
+        <div class="dept-box">
+            <p>{{ dept.peos }}</p>
+        </div>
+
+    {% elif section == 'notices' %}
+        <h1>Notice Board - {{ dept.name }}</h1>
+        <div class="dept-box">
+            <p>{{ dept.notices }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>

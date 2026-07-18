@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ dept.name }} - SRNM College</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/departments">Departments</a> |
+        <a href="/notices">Notices</a> |
+        <a href="/timetable">Timetable</a> |
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <h1>{{ dept.name }}</h1>
+
+    <div class="dept-box">
+        <h2>Year of Establishment</h2>
+        <p>{{ dept.year }}</p>
+    </div>
+
+    <div class="dept-box">
+        <h2>About the Department</h2>
+        <p>{{ dept.about }}</p>
+    </div>
+
+    <div class="dept-box">
+        <h2>Programmes Offered</h2>
+        <ul>
+            {% for programme in dept.programmes %}
+            <li>{{ programme }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="dept-box">
+        <h2><a href="/departments/{{ dept_id }}/faculty">Faculty Members</a></h2>
+    </div>
+
+    <div class="dept-box">
+        <h2><a href="/departments/{{ dept_id }}/syllabus">Syllabus</a></h2>
+    </div>
+
+    <div class="dept-box">
+        <h2><a href="/departments/{{ dept_id }}/peos">PEOs, POs & PSOs</a></h2>
+    </div>
+
+    <div class="dept-box">
+        <h2><a href="/departments/{{ dept_id }}/notices">Notice Board</a></h2>
+    </div>
+</body>
+</html>

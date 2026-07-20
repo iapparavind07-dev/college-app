@@ -224,3 +224,20 @@ p {
     font-size: 14px;
     line-height: 1.5;
 }
+.download-btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.download-btn:hover {
+  background-color: #45a049;
+}
+.download-container {
+  text-align: center;
+  margin-top: 30px;
+}

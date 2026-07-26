@@ -9,15 +9,50 @@
     <nav>
         <a href="/">Home</a> |
         <a href="/departments">Departments</a> |
-        <a href="/faculty">Faculty</a> |
         <a href="/notices">Notices</a> |
         <a href="/timetable">Timetable</a> |
         <a href="/contact">Contact</a>
     </nav>
 
-    <h1>Sri S.R.N.M College, Sattur</h1>
-    <p><strong>Motto:</strong> Love, Wisdom and Service</p>
-    <p>Established in 1970, Sri S.R.N.M College is an autonomous institution affiliated to Madurai Kamaraj University, accredited with NAAC A++ grade. The college is committed to helping students from rural areas realise their talents and build capable, socially responsible careers.</p>
-    <p>Explore our departments, faculty, notices, and timetable using the navigation above.</p>
+    <div class="slider">
+        <div class="slide active">
+            <h2>Sri S.R.N.M College, Sattur</h2>
+            <p>Love, Wisdom and Service</p>
+        </div>
+        <div class="slide">
+            <h2>NAAC A++ Accredited</h2>
+            <p>Committed to Excellence in Education</p>
+        </div>
+        <div class="slide">
+            <h2>Autonomous Institution</h2>
+            <p>Affiliated to Madurai Kamaraj University</p>
+        </div>
+    </div>
+
+    <div class="fade-in">
+        <h1>Welcome to Sri S.R.N.M College, Sattur</h1>
+        <p>Established in 1970, Sri S.R.N.M College is an autonomous institution affiliated to Madurai Kamaraj University, accredited with NAAC A++ grade. The college is committed to helping students from rural areas realise their talents and build capable, socially responsible careers.</p>
+    </div>
+
+    <div class="stats fade-in">
+        <div class="stat-box">
+            <h2 class="counter" data-target="24">0</h2>
+            <p>Departments</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Years of Excellence</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="100">0</h2>
+            <p>Faculty Members</p>
+        </div>
+    </div>
+
+    <div class="fade-in">
+        <p>Explore our departments, faculty, notices, and timetable using the navigation above.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@
         <div class="dept-box">
             <ul>
                 {% for member in dept.faculty %}
-                <li>{{ member }}</li>
+                <li><a href="/departments/{{ dept_id }}/faculty/{{ loop.index0 }}">{{ member.name }} - {{ member.designation }}</a></li>
                 {% endfor %}
             </ul>
         </div>

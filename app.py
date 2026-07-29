@@ -25,6 +25,17 @@ def department_section(dept_id, section):
         return "Department not found", 404
     return render_template('department_section.html', dept=dept, dept_id=dept_id, section=section)
 
+@app.route('/departments/<dept_id>/faculty/<int:index>')
+def faculty_profile(dept_id, index):
+    dept = departments.get(dept_id)
+    if dept is None:
+        return "Department not found", 404
+    try:
+        member = dept['faculty'][index]
+    except IndexError:
+        return "Faculty member not found", 404
+    return render_template('faculty_profile.html', dept=dept, dept_id=dept_id, member=member)
+
 @app.route('/notices')
 def notices():
     return render_template('notices.html')

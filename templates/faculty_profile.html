@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ member.name }} - {{ dept.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/departments">Departments</a> |
+        <a href="/notices">Notices</a> |
+        <a href="/timetable">Timetable</a> |
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="dept-box">
+        <img src="{{ url_for('static', filename='images/' + member.photo) }}" alt="{{ member.name }}" style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
+
+        <h1>{{ member.name }}</h1>
+        <p><strong>Designation:</strong> {{ member.designation }}</p>
+        <p><strong>Qualification:</strong> {{ member.qualification }}</p>
+        <p><strong>Experience:</strong> {{ member.experience }}</p>
+        <p><strong>Department:</strong> {{ dept.name }}</p>
+    </div>
+</body>
+</html>

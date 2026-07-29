@@ -1,10 +1,36 @@
+def default_faculty():
+    return [
+        {
+            "name": "Faculty Name 1",
+            "designation": "Head of Department",
+            "qualification": "M.A., M.Phil., Ph.D.",
+            "experience": "15 years",
+            "photo": "faculty1.jpg"
+        },
+        {
+            "name": "Faculty Name 2",
+            "designation": "Associate Professor",
+            "qualification": "M.A., M.Phil.",
+            "experience": "10 years",
+            "photo": "faculty2.jpg"
+        },
+        {
+            "name": "Faculty Name 3",
+            "designation": "Assistant Professor",
+            "qualification": "M.A., B.Ed.",
+            "experience": "5 years",
+            "photo": "faculty3.jpg"
+        }
+    ]
+
+
 departments = {
     "tamil": {
         "name": "Department of Tamil",
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.A. Tamil", "M.A. Tamil"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Associate Professor", "Faculty Name 3 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -14,7 +40,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.A. English", "M.A. English"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -24,7 +50,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.A. History"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -34,7 +60,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.A. Economics"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -44,7 +70,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Mathematics"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -54,7 +80,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Physics"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -64,7 +90,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Chemistry"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -74,7 +100,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Zoology"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -84,7 +110,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Botany"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -94,7 +120,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Computer Science"],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -104,7 +130,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Com."],
-        "faculty": ["Faculty Name 1 - Head of Department", "Faculty Name 2 - Assistant Professor"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -114,7 +140,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.A. Tamil"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -124,7 +150,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.A. English"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -134,7 +160,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.A. Hindi"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -144,7 +170,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.A. History"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -154,7 +180,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Mathematics"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -164,7 +190,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Physics"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -174,7 +200,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Chemistry"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -184,7 +210,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Nutrition and Dietetics"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -194,7 +220,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Computer Science"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -204,7 +230,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Com."],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -214,7 +240,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Com. Professional Accounting"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -224,7 +250,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["B.Sc. Data Science"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
@@ -234,7 +260,7 @@ departments = {
         "year": "To be updated",
         "about": "To be updated with department history and details.",
         "programmes": ["BBA"],
-        "faculty": ["Faculty Name 1 - Head of Department"],
+        "faculty": default_faculty(),
         "syllabus": "Syllabus details to be updated.",
         "peos": "Programme Educational Objectives, Programme Outcomes, and Programme Specific Outcomes to be updated.",
         "notices": "No notices currently."
